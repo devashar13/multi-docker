@@ -12,7 +12,7 @@ after_success:
     -  docker build -t devashar/multi-nginx ./nginx
     -  docker build -t devashar/multi-server ./server
     -  docker build -t devashar/multi-worker ./worker
-    -  echo "$DOCKER_PASSOWRD" | docker login -u "$DOCKER_ID" --passowrd-s
+    -  docker login -u= "$DOCKER_ID" -p ="$DOCKER_PASSOWRD"
     -  docker push devashar/multi-client
     -  docker push devashar/multi-nginx
     -  docker push devashar/multi-server
